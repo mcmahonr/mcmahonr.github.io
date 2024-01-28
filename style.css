@@ -1,6 +1,8 @@
 #alphabet-buttons button {
     margin: 5px;
     padding: 10px;
+    display: inline-block;
+    font-size: 24px;
 }
 
 #word-display {
