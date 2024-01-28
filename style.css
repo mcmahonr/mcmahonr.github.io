@@ -1,0 +1,14 @@
+#alphabet-buttons button {
+    margin: 5px;
+    padding: 10px;
+}
+
+#word-display {
+    margin: 20px;
+    font-size: 24px;
+}
+
+#speak-button {
+    padding: 10px;
+    font-size: 20px;
+}
