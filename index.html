@@ -12,17 +12,18 @@
         .alphabet-button {
             margin: 5px;
             padding: 10px;
-            width: 40px; /* Adjust size as needed */
+            width: 40px;
         }
         #word-display {
             margin: 20px;
             font-size: 24px;
             text-align: center;
         }
-        #speak-button {
+        .action-button {
             padding: 10px;
             font-size: 20px;
-            width: 100%; /* Full width */
+            width: 100%;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -39,8 +40,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
-                <button class="btn btn-primary" id="speak-button">Speak</button>
+            <div class="col-6">
+                <button class="btn btn-primary action-button" id="speak-button">Speak</button>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-danger action-button" id="clear-button">Clear</button>
             </div>
         </div>
     </div>
