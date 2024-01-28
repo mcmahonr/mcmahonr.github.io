@@ -28,4 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
         word = '';
         document.getElementById('word-display').textContent = word;
     };
+
+    document.getElementById('space-bar').onclick = function () {
+        word += ' ';
+        document.getElementById('word-display').textContent = word;
+    };
 });
