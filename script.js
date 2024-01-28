@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     alphabet.split('').forEach(function (letter) {
         const buttonDiv = document.createElement('div');
-        buttonDiv.className = 'col-4 text-center';
+        buttonDiv.className = 'col-6 text-center';
 
         const button = document.createElement('button');
-        button.className = 'btn btn-secondary btn-lg btn-block';
+        button.className = 'btn btn-secondary btn-lg btn-block alphabet-button';
         button.textContent = letter;
         button.onclick = function () {
             word += letter;
