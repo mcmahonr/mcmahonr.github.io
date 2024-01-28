@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     alphabet.split('').forEach(function (letter) {
         const buttonDiv = document.createElement('div');
-        buttonDiv.className = 'col-4 text-center'; // Bootstrap grid class
+        buttonDiv.className = 'col-4 text-center';
 
         const button = document.createElement('button');
-        button.className = 'btn btn-secondary btn-lg btn-block'; // Larger Bootstrap button
+        button.className = 'btn btn-secondary btn-lg btn-block';
         button.textContent = letter;
         button.onclick = function () {
             word += letter;
@@ -22,5 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('speak-button').onclick = function () {
         const utterance = new SpeechSynthesisUtterance(word);
         speechSynthesis.speak(utterance);
+    };
+
+    document.getElementById('clear-button').onclick = function () {
+        word = '';
+        document.getElementById('word-display').textContent = word;
     };
 });
